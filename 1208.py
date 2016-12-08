@@ -42,3 +42,20 @@ def sumOfLeftLeaves(self, root):
         left_sum += root.left.val
     left_sum += self.sumOfLeftLeaves(root.left) + self.sumOfLeftLeaves(root.right) #break to subquestions
     return left_sum
+
+# leetcode 100.same tree
+def isSameTree(self, p, q):
+    """
+    :type p: TreeNode
+    :type q: TreeNode
+    :rtype: bool
+    """
+    if not p and not q:
+        return True
+    if not p or not q:
+        return False
+    else:
+        if p.val == q.val and self.isSameTree(p.left, q.left) and self.isSameTree(p.right, q.right):
+            return True
+        else:
+            return False
