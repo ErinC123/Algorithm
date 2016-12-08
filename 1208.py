@@ -1,4 +1,4 @@
-#Tree
+# Tree
 """
 Node is defined as
 self.left (the left child of the node)
@@ -9,14 +9,20 @@ self.data (the value of the node)
 # preorder
 import sys
 
+
 def preOrder(root):
-    sys.stdout.write(str(root.data)+" ")
-    if root.left != None:
+    if not root:
+        return
+    print root.data
+    #sys.stdout.write(str(root.data)+" ")
+    if root.left:
         preOrder(root.left)
-    if root.right != None:
+    if root.right:
         preOrder(root.right)
 
 # inorder
+
+
 def inOrder(root):
     if root.left != None:
         inOrder(root.left)
@@ -25,6 +31,8 @@ def inOrder(root):
         inOrder(root.right)
 
 # postorder
+
+
 def postOrder(root):
     if root.left != None:
         postOrder(root.left)
@@ -33,13 +41,17 @@ def postOrder(root):
     sys.stdout.write(str(root.data)+" ")
 
 # leetcode 404.sum of left leaves
+
+
 def sumOfLeftLeaves(self, root):
 
     left_sum = 0
-    if root == None:    #bound
+    if root == None:  # bound
         return 0
-    if root.left != None and root.left.left == None and root.left.right == None: #left leaves
+    # left leaves
+    if root.left != None and root.left.left == None and root.left.right == None:
         left_sum += root.left.val
+<<<<<<< HEAD
     left_sum += self.sumOfLeftLeaves(root.left) + self.sumOfLeftLeaves(root.right) #break to subquestions
     return left_sum
 
@@ -59,3 +71,9 @@ def isSameTree(self, p, q):
             return True
         else:
             return False
+=======
+    # break to subquestions
+    left_sum += self.sumOfLeftLeaves(root.left) + \
+        self.sumOfLeftLeaves(root.right)
+    return left_sum
+>>>>>>> c61bde614dcb13658aa291b29c93de83edaae4ba
