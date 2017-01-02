@@ -30,4 +30,44 @@ class Solution(object):
                 next_node = next_node.next
             except Exception:
                 return prv_node
-            
+
+    # Better solutions
+    # Iterative way
+    def reverseList_iterative(self, head):
+        """
+        :type head: ListNode
+        :rtype: ListNode
+        """
+        if not head or not head.next:
+           return head
+        dummy = ListNode(-1)
+        cur = head
+        while cur:
+            tmp = cur.next
+            cur.next = dummy.next
+            dummy.next = cur
+            cur = tmp
+        return dummy.next
+
+    # Recursive way
+    newHead = ListNode(-1)
+    def reverseList_recursive(self, head):
+        """
+        :type head: ListNode
+        :rtype: ListNode
+        """
+        if not head or not head.next:
+            return head
+        self.helper(head)
+        return self.newHead
+
+    def helper(self, p):
+        if not p.next:
+            self.newHead = p
+            return self.newHead
+
+        self.helper(p.next)
+        q = p.next
+        q.next = p
+        p.next = None
+        
