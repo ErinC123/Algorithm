@@ -1,5 +1,5 @@
 #   Question: 278. First Bad Version
-# Difficulty: Medium
+# Difficulty: 201-300
 #       Tags: Binary Search
 '''
 You are a product manager and currently leading a team to develop a new product. Unfortunately, the latest version of

@@ -1,5 +1,5 @@
 #   Question: 412. Fizz Buzz
-# Difficulty: Easy
+# 1-100: 101-200
 #       Tags: None
 '''
 Write a program that outputs the string representation of numbers from 1 to n

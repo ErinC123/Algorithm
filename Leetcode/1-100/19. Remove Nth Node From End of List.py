@@ -1,5 +1,5 @@
 #   Question: 19. Remove Nth Node From End of List
-# Difficulty: Easy
+# 1-100: 101-200
 #       Tags: Linked List, Two Pointers
 '''
 Given a linked list, remove the nth node from the end of list and return its head.

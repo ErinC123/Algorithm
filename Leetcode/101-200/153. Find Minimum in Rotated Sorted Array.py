@@ -1,5 +1,5 @@
 #   Question: 153. Find Minimum in Rotated Sorted Array
-# Difficulty: Medium
+# Difficulty: 201-300
 #       Tags: Binary Search, Array
 '''
 Suppose an array sorted in ascending order is rotated at some pivot unknown to you beforehand.

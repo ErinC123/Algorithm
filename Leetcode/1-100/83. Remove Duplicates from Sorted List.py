@@ -1,5 +1,5 @@
 #   Question: 83.Remove Duplicates from Sorted List
-# Difficulty: Easy
+# 1-100: 101-200
 #       Tags: Linked List
 '''
 Given a sorted linked list, delete all duplicates such that each element appear only once.

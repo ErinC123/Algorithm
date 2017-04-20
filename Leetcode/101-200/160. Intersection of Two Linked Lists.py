@@ -1,5 +1,5 @@
 #   Question: 160. Intersection of Two Linked Lists.
-# Difficulty: Easy
+# 1-100: 101-200
 #       Tags: Linked List
 '''
 Write a program to find the node at which the intersection fo two singly linked lists begins.

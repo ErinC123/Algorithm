@@ -1,5 +1,5 @@
 #   Question: 162. Find Peak Element
-# Difficulty: Medium
+# Difficulty: 201-300
 #       Tags: Binary Search, Array
 '''
 A peak element is an element that is greater than its neighbors.

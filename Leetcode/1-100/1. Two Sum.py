@@ -1,5 +1,5 @@
 #   Question: 1. Two Sum
-# Difficulty: Easy
+# 1-100: 101-200
 #       Tags: Array, Hash Table
 '''
 Given an array of integers, return indices of the two numbers such that they add up to a specific target.

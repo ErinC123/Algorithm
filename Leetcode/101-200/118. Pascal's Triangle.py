@@ -1,5 +1,5 @@
 #   Question: 118. Pascal's Triangle
-# Difficulty: Easy
+# 1-100: 101-200
 #       Tags: Array
 '''
 Given numRows, generate the first numRows of Pascal's triangle.

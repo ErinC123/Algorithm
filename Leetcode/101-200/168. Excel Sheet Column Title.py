@@ -1,5 +1,5 @@
 #   Question: 168. Excel Sheet Column Title
-# Difficulty: Easy
+# 1-100: 101-200
 #       Tags: Array, Hash Table
 '''
 Given a positive integer, return its corresponding column title as appear in an Excel sheet.

@@ -1,5 +1,5 @@
 #   Question: 69. Sqrt(x)
-# Difficulty: Medium
+# 1-100: 201-300
 #       Tags: Binary Search, Math
 '''
 Implement int sqrt(int x).

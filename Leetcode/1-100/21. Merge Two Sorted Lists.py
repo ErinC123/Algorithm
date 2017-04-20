@@ -1,5 +1,5 @@
 #   Question: 21. Merge Two Sorted Lists
-# Difficulty: Easy
+# 1-100: 101-200
 #       Tags: Linked List
 '''
 Merge two sorted linked lists and return it as a new list. The new list should be made by splicing together the nodes

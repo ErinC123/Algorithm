@@ -1,5 +1,5 @@
 #   Question: 81. Search in Rotated Sorted Array II
-# Difficulty: Medium
+# Difficulty: 201-300
 #       Tags: Binary Search, Array
 '''
 Follow up for "Search in Rotated Sorted Array":
