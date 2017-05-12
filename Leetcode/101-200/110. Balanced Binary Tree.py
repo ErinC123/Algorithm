@@ -14,25 +14,47 @@ For this problem, a height-balanced binary tree is defined as a binary tree in w
 #         self.left = None
 #         self.right = None
 
+# class Solution(object):
+#     def maxDepth(self, root):
+#         """
+#         :type root: TreeNode
+#         :rtype: int
+#         """
+#         if not root: return 0
+#         else:
+#             leftValue = self.maxDepth(root.left)+1
+#             rightValue = self.maxDepth(root.right)+1
+#             if leftValue > rightValue: return leftValue
+#             else: return rightValue
+#
+#     def isBalanced(self, root):
+#         """
+#         :type root: TreeNode
+#         :rtype: bool
+#         """
+#         if not root: return True
+#         depth_left = self.maxDepth(root.left)
+#         depth_right = self.maxDepth(root.right)
+#         return abs(depth_left-depth_right)<2 and self.isBalanced(root.left) and self.isBalanced(root.right)
+
 class Solution(object):
-    def maxDepth(self, root):
-        """
-        :type root: TreeNode
-        :rtype: int
-        """
-        if not root: return 0
-        else:
-            leftValue = self.maxDepth(root.left)+1
-            rightValue = self.maxDepth(root.right)+1
-            if leftValue > rightValue: return leftValue
-            else: return rightValue
+    h_balance = True
 
     def isBalanced(self, root):
         """
         :type root: TreeNode
         :rtype: bool
         """
-        if not root: return True
-        depth_left = self.maxDepth(root.left)
-        depth_right = self.maxDepth(root.right)
-        return abs(depth_left-depth_right)<2 and self.isBalanced(root.left) and self.isBalanced(root.right)
+        self.calc_depth(root)
+        return self.h_balance
+
+    def calc_depth(self, root):
+
+        if root == None: return 0
+
+        left = self.calc_depth(root.left)
+        right = self.calc_depth(root.right)
+
+        if abs(left - right) > 1: self.h_balance = False
+
+        return 1 + max(left, right)
