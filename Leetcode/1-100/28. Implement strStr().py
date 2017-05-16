@@ -17,6 +17,6 @@ class Solution(object):
             return 0
         nlen = len(needle)
         for i in range(len(haystack)):
-            if i+nlen and haystack[i:i+nlen] == needle:
+            if i+nlen < len(haystack) and haystack[i:i+nlen] == needle:
                 return i
         return -1
