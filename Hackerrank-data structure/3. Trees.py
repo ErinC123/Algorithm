@@ -133,3 +133,37 @@
 #     else:
 #         r.right = helper(r.right, new)
 #     return r
+
+# Binary Search Tree : Lowest Common Ancestor
+# def lca(root, v1, v2):
+#     # Enter your code here
+#     if root == None or root.data == v1 or root.data == v2:
+#         return root
+#     left = lca(root.left, v1, v2)
+#     right = lca(root.right, v1, v2)
+#
+#     if left and right:  return root
+#     if left:    return left
+#     if right:   return right
+#     return None
+
+# Is This a Binary Search Tree?
+#     def isValidBST(self, root):
+#         # write your code here
+#         import sys
+#         self.lastVal = -sys.maxint
+#         self.isBST = True
+#         self.helper(root)
+#         return self.isBST
+#
+#     def helper(self, root):
+#         if root == None:    return
+#
+#         self.helper(root.left)
+#
+#         if self.lastVal >= root.val:
+#             self.isBST = False
+#             return
+#         self.lastVal = root.val
+#
+#         self.helper(root.right)
