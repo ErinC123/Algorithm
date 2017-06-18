@@ -71,27 +71,65 @@
 #     return h
 
 # Tree : Top View
-def topView(root):
-    # Write your code here
-    res = []
-    if root.left != None:
-        goLeft(root.left, res)
+# def topView(root):
+#     # Write your code here
+#     res = []
+#     if root.left != None:
+#         goLeft(root.left, res)
+#
+#     res.append(root.data)
+#
+#     if root.right != None:
+#         goRight(root.right, res)
+#
+#     print(' '.join(str(i) for i in res))
+#
+#
+# def goLeft(node, res):
+#     if node.left != None:
+#         goLeft(node.left, res)
+#     res.append(node.data)
+#
+#
+# def goRight(node, res):
+#     res.append(node.data)
+#     if node.right != None:
+#         goRight(node.right, res)
 
-    res.append(root.data)
+# Tree: Level Order Traversal
+# def levelOrder(root):
+#     # Write code Here
+#     res = []
+#
+#     if root == None:    return res
+#
+#     q = [root]
+#     while q:
+#         new_q = []
+#         res += [n.data for n in q]
+#         for node in q:
+#             if node.left:
+#                 new_q.append(node.left)
+#             if node.right:
+#                 new_q.append(node.right)
+#         q = new_q
+#
+#     print(' '.join(str(i) for i in res))
 
-    if root.right != None:
-        goRight(root.right, res)
 
-    print(' '.join(str(i) for i in res))
-
-
-def goLeft(node, res):
-    if node.left != None:
-        goLeft(node.left, res)
-    res.append(node.data)
-
-
-def goRight(node, res):
-    res.append(node.data)
-    if node.right != None:
-        goRight(node.right, res)
+# Binary Search Tree : Insertion
+# def insert(r, val):
+#     # Enter you code here.
+#     new = Node(val)
+#
+#     return helper(r, new)
+#
+#
+# def helper(r, new):
+#     if r == None:   return new
+#
+#     if r.data > new.data:
+#         r.left = helper(r.left, new)
+#     else:
+#         r.right = helper(r.right, new)
+#     return r
